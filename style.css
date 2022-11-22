@@ -219,10 +219,12 @@ button svg:hover {
 .todo li .buttons svg {
     width: 30px;
     height: 30px;
+    
 }
 
 .remove svg, .complete svg {
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
 }
 
 
@@ -234,4 +236,7 @@ button svg:hover {
 
 .complete svg:hover {
     fill:darkcyan;
+    
+
 }
+
