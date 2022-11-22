@@ -101,7 +101,7 @@ header {
 }
 
 header input {
-    width: 100%;
+    width: 90%;
     height: 50px;
     float: left;
     background: rgba(255, 255, 255, 0.2);
@@ -113,11 +113,40 @@ header input {
     color: white;
     box-shadow: none;
     outline: none;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
+    text-indent: 3rem;
+    padding: 0 60px 0 0;
 }
 
 header input::-webkit-input-placeholder {
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
 
+header button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: auto;
+    right: 15px;
+    z-index: 2;
+
+    border-radius: 25px;
+    background-color: white;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+}
+
+button svg{
+    
+   opacity: 0.6;
+   transition: all 0.5 ease-in-out;
+   fill: #25b99a
+    
+}
+
+button svg:hover {
+    opacity: 0.8;
 }
