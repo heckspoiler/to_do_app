@@ -32,6 +32,7 @@ body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    padding: 200px 0 0 0;
 }
 
 /*
@@ -152,4 +153,85 @@ button svg{
 button svg:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+
+.container {
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+.todo {
+    width: 100%;
+    float: left;
+    font-family: var(--secondary-font);
+    list-style: none; 
+}
+
+.todo li {
+    position: relative;
+    width: 95%;
+    float: left;
+    min-height: 50px;
+    margin-bottom: 15px; 
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
+    padding: 0 100px 0 0;
+    font-size: 14px;
+    font-weight:500;
+
+}
+
+.todo li:last-child {
+    margin: 0px;
+}
+
+.todo li .buttons {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.todo li .buttons button {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    float: left;
+    background-color: white;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.todo li .buttons button:last-of-type:before {
+    content: '';
+    width: 1px;
+    height: 30px;
+    position: absolute; 
+    top: 10px; 
+    left: 0;
+    background-color: #edf0f1;
+}
+
+.todo li .buttons svg {
+    width: 30px;
+    height: 30px;
+}
+
+.remove svg, .complete svg {
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+
+.remove svg:hover {
+    fill: red;
+}
+
+.complete svg:hover {
+    fill:darkcyan;
 }
