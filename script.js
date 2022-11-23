@@ -30,7 +30,7 @@ function completeItem() {
   var parentID = parent.id;
 
   // checks if the item should be added to the completed or re-added to the todo list
-  var target =
+  let target =
     id === "todo"
       ? document.getElementById("completed")
       : document.getElementById("todo");
@@ -56,14 +56,13 @@ function addItemTodo(text) {
   // Add click event for removing item
   remove.addEventListener("click", removeItem);
   let complete = document.createElement("button");
-  complete.classList.add("complete");
+  complete.classList.add("completed");
   complete.innerHTML = completeSVG;
 
   // Add click event for completing items
   remove.addEventListener("click", completeItem);
-  let complete2 = document.createElement("button");
-  complete2.classList.add("complete");
-  complete2.innerHTML = completeSVG;
+  complete.classList.add("completed");
+  complete.innerHTML = completeSVG;
 
   buttons.appendChild(remove);
   buttons.appendChild(complete);

@@ -228,6 +228,9 @@ button svg:hover {
     
 }
 
+.complete svg {
+    fill: blue;
+}
 
 
 
@@ -237,7 +240,15 @@ button svg:hover {
 
 .complete svg:hover {
     fill:darkcyan;
-    
 
 }
 
+
+
+#completed:not(:empty) {
+    opacity: 0.5;
+    width: 150px;
+    height: 1px;
+    background: #d8e5e0;
+    position: absolute;
+}
